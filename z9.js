@@ -15,7 +15,9 @@ const str1 = "listen";
 const str2 = "silent";
 
 function jesuAnagrami(str1,str2){
-    const anagram = str2.split("").reverse().join("");
-    return anagram
+    // let jeAnagram = false;
+    let anagram1 = str1.split("").sort().join("")
+    let anagram2 = str2.split("").sort().join("")
+    return anagram1 === anagram2 ? true : false
 }
 console.log(jesuAnagrami(str1,str2));
